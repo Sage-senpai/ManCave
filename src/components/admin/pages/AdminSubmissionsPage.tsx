@@ -4,12 +4,11 @@ import { Card } from '../../ui/card';
 import { Button } from '../../ui/button';
 import { Badge } from '../../ui/badge';
 import { Textarea } from '../../ui/textarea';
-import { 
-  CheckCircle, 
-  XCircle, 
-  Clock, 
+import {
+  CheckCircle,
+  XCircle,
+  Clock,
   AlertCircle,
-  User,
   Trophy,
   ExternalLink,
   MessageSquare

@@ -1,6 +1,6 @@
 import { Button } from '../ui/button';
 import { motion } from 'motion/react';
-import { ArrowRight, Trophy, Rocket, Users, BookOpen, Code, Sparkles, TrendingUp, MessageSquare, Target, Award, Zap, Star } from 'lucide-react';
+import { ArrowRight, Rocket, Users, BookOpen, Code, Sparkles, TrendingUp, MessageSquare, Target, Award, Zap, Star } from 'lucide-react';
 import { ImageWithFallback } from '../figma/ImageWithFallback';
 
 interface LandingPageProps {

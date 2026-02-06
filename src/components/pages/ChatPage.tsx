@@ -4,13 +4,12 @@ import { Button } from '../ui/button';
 import { Input } from '../ui/input';
 import { Badge } from '../ui/badge';
 import { ScrollArea } from '../ui/scroll-area';
-import { 
-  Send, 
-  Paperclip, 
+import {
+  Send,
+  Paperclip,
   Smile,
   Search,
   MoreVertical,
-  User,
   Shield
 } from 'lucide-react';
 import { motion } from 'motion/react';
@@ -40,7 +39,7 @@ interface ChatContact {
   unread?: number;
 }
 
-export function ChatPage({ onNavigate }: ChatPageProps) {
+export function ChatPage({ onNavigate: _onNavigate }: ChatPageProps) {
   const [selectedChat, setSelectedChat] = useState<number>(1);
   const [messageInput, setMessageInput] = useState('');
   const [searchQuery, setSearchQuery] = useState('');

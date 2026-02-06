@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import { Button } from '../ui/button';
 import { Card } from '../ui/card';
-import { Input } from '../ui/input';
 import { Progress } from '../ui/progress';
 import { WalletConnector } from '../WalletConnector';
 import { motion, AnimatePresence } from 'motion/react';

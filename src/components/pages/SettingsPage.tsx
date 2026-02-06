@@ -6,18 +6,17 @@ import { Label } from '../ui/label';
 import { Separator } from '../ui/separator';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '../ui/tabs';
 import { motion } from 'motion/react';
-import { 
-  User, 
-  Bell, 
-  Shield, 
-  Palette, 
-  Globe, 
-  Link as LinkIcon, 
-  Mail, 
+import {
+  User,
+  Bell,
+  Shield,
+  Palette,
+  Globe,
+  Link as LinkIcon,
+  Mail,
   Lock,
   Trash2,
-  Save,
-  ChevronRight
+  Save
 } from 'lucide-react';
 
 interface SettingsPageProps {

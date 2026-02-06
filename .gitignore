@@ -1,0 +1,133 @@
+# ===============================
+# Dependencies
+# ===============================
+node_modules/
+.pnp/
+.pnp.js
+.yarn/
+
+# ===============================
+# Build Output
+# ===============================
+build/
+dist/
+out/
+.next/
+*.tsbuildinfo
+
+# ===============================
+# Environment & Secrets
+# ===============================
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+.env*.local
+*.pem
+
+# ===============================
+# Claude Code / AI Assistants
+# ===============================
+.claude/
+.claude_memory/
+.claude-cache/
+claude-output/
+.anthropic/
+.cursor/
+.aider*
+.continue/
+.copilot/
+.codeium/
+.tabnine/
+
+# ===============================
+# IDE & Editors
+# ===============================
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.project
+.classpath
+.settings/
+*.sublime-workspace
+*.sublime-project
+
+# ===============================
+# OS Generated Files
+# ===============================
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# ===============================
+# Logs
+# ===============================
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# ===============================
+# Testing
+# ===============================
+coverage/
+.nyc_output/
+*.lcov
+cypress/videos/
+cypress/screenshots/
+playwright-report/
+test-results/
+
+# ===============================
+# Cache & Temp Files
+# ===============================
+.cache/
+.parcel-cache/
+.eslintcache
+.stylelintcache
+*.tgz
+.temp/
+.tmp/
+tmp/
+
+# ===============================
+# Vite Specific
+# ===============================
+*.local
+vite.config.ts.timestamp-*
+vite.config.mts.timestamp-*
+vite.config.js.timestamp-*
+vite.config.mjs.timestamp-*
+
+# ===============================
+# TypeScript
+# ===============================
+*.tsbuildinfo
+tsconfig.tsbuildinfo
+
+# ===============================
+# Misc
+# ===============================
+.vercel/
+.netlify/
+.serverless/
+*.zip
+*.tar.gz
+*.rar
+
+# ===============================
+# Debug
+# ===============================
+.node-inspect/
+debug.log

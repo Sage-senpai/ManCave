@@ -21,7 +21,7 @@ interface KnowledgeHubPageProps {
   onNavigate?: (page: string) => void;
 }
 
-export function KnowledgeHubPage({ onNavigate }: KnowledgeHubPageProps) {
+export function KnowledgeHubPage({ onNavigate: _onNavigate }: KnowledgeHubPageProps) {
   const [selectedCategory, setSelectedCategory] = useState<string>('all');
   const [searchQuery, setSearchQuery] = useState('');
 

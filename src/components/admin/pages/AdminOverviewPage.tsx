@@ -3,17 +3,16 @@ import { AdminSidebar } from '../AdminSidebar';
 import { Card } from '../../ui/card';
 import { Button } from '../../ui/button';
 import { Badge } from '../../ui/badge';
-import { 
-  Users, 
-  Target, 
-  TrendingUp, 
+import {
+  Users,
+  Target,
+  TrendingUp,
   Clock,
   FileEdit,
   UserPlus,
   Megaphone,
   AlertCircle,
-  CheckCircle,
-  XCircle
+  CheckCircle
 } from 'lucide-react';
 import { motion } from 'motion/react';
 

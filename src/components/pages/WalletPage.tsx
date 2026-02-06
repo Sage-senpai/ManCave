@@ -3,7 +3,7 @@ import { Button } from '../ui/button';
 import { Badge } from '../ui/badge';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '../ui/tabs';
 import { motion } from 'motion/react';
-import { 
+import {
   Wallet as WalletIcon,
   ArrowUpRight,
   ArrowDownLeft,
@@ -14,7 +14,8 @@ import {
   Trash2,
   Check,
   TrendingUp,
-  Coins
+  Coins,
+  Users
 } from 'lucide-react';
 import { useState } from 'react';
 
@@ -22,7 +23,7 @@ interface WalletPageProps {
   onNavigate: (page: string) => void;
 }
 
-export function WalletPage({ onNavigate }: WalletPageProps) {
+export function WalletPage({ onNavigate: _onNavigate }: WalletPageProps) {
   const [copiedAddress, setCopiedAddress] = useState(false);
 
   const handleCopyAddress = () => {

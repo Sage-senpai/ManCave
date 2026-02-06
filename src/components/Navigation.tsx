@@ -1,4 +1,4 @@
-import { Wallet, Menu, X, Shield, User, ArrowLeft } from 'lucide-react';
+import { Wallet, Menu, X, Shield, User, ArrowLeft, Settings } from 'lucide-react';
 import { Button } from './ui/button';
 import { useState } from 'react';
 import { Badge } from './ui/badge';
@@ -87,7 +87,7 @@ export function Navigation({
               </Button>
             )}
 
-            {(currentPage === 'dashboard' || currentPage === 'quests' || currentPage === 'knowledge' || currentPage === 'profile' || currentPage === 'chat') && (
+            {(currentPage === 'dashboard' || currentPage === 'quests' || currentPage === 'knowledge' || currentPage === 'profile' || currentPage === 'chat' || currentPage === 'settings' || currentPage === 'wallet') && (
               <>
                 <button
                   onClick={() => handleNavigate('dashboard')}
@@ -132,16 +132,26 @@ export function Navigation({
                 <button
                   onClick={() => handleNavigate('chat')}
                   className={`transition-colors ${
-                    currentPage === 'chat' 
-                      ? 'text-[#0AF3FF]' 
+                    currentPage === 'chat'
+                      ? 'text-[#0AF3FF]'
                       : 'text-white hover:text-[#0AF3FF]'
                   }`}
                 >
                   Chat
                 </button>
+                <button
+                  onClick={() => handleNavigate('settings')}
+                  className={`transition-colors ${
+                    currentPage === 'settings'
+                      ? 'text-[#0AF3FF]'
+                      : 'text-white hover:text-[#0AF3FF]'
+                  }`}
+                >
+                  <Settings className="w-4 h-4" />
+                </button>
               </>
             )}
-            
+
             {currentPage === 'landing' ? (
               <>
                 <Button
@@ -163,6 +173,7 @@ export function Navigation({
               <Button
                 variant="outline"
                 className="border-[#0AF3FF] text-[#0AF3FF] hover:bg-[#0AF3FF] hover:text-black gap-2"
+                onClick={() => handleNavigate('wallet')}
               >
                 <Wallet className="w-4 h-4" />
                 <span className="hidden lg:inline">0x7a3f...92c4</span>
@@ -182,7 +193,7 @@ export function Navigation({
         {/* Mobile Menu */}
         {mobileMenuOpen && (
           <div className="md:hidden py-4 border-t border-[#0AF3FF]/20">
-            {(currentPage === 'dashboard' || currentPage === 'quests' || currentPage === 'knowledge' || currentPage === 'profile' || currentPage === 'chat') && (
+            {(currentPage === 'dashboard' || currentPage === 'quests' || currentPage === 'knowledge' || currentPage === 'profile' || currentPage === 'chat' || currentPage === 'settings' || currentPage === 'wallet') && (
               <div className="flex flex-col gap-2">
                 {/* Admin Mode Toggle for Mobile */}
                 {(currentPage === 'dashboard' || isAdminPage) && (
@@ -243,16 +254,36 @@ export function Navigation({
                 <button
                   onClick={() => handleNavigate('chat')}
                   className={`py-2 text-left ${
-                    currentPage === 'chat' 
-                      ? 'text-[#0AF3FF]' 
+                    currentPage === 'chat'
+                      ? 'text-[#0AF3FF]'
                       : 'text-white hover:text-[#0AF3FF]'
                   }`}
                 >
                   Chat
                 </button>
+                <button
+                  onClick={() => handleNavigate('wallet')}
+                  className={`py-2 text-left ${
+                    currentPage === 'wallet'
+                      ? 'text-[#0AF3FF]'
+                      : 'text-white hover:text-[#0AF3FF]'
+                  }`}
+                >
+                  Wallet
+                </button>
+                <button
+                  onClick={() => handleNavigate('settings')}
+                  className={`py-2 text-left ${
+                    currentPage === 'settings'
+                      ? 'text-[#0AF3FF]'
+                      : 'text-white hover:text-[#0AF3FF]'
+                  }`}
+                >
+                  Settings
+                </button>
               </div>
             )}
-            
+
             {currentPage === 'landing' && (
               <div className="flex flex-col gap-2">
                 <Button

@@ -3,14 +3,14 @@ import { QuestCard, Quest } from '../QuestCard';
 import { Input } from '../ui/input';
 import { Button } from '../ui/button';
 import { Badge } from '../ui/badge';
-import { Search, Filter, SlidersHorizontal, ArrowLeft } from 'lucide-react';
+import { Search, SlidersHorizontal } from 'lucide-react';
 import { motion } from 'motion/react';
 
 interface QuestBoardPageProps {
   onNavigate?: (page: string) => void;
 }
 
-export function QuestBoardPage({ onNavigate }: QuestBoardPageProps) {
+export function QuestBoardPage({ onNavigate: _onNavigate }: QuestBoardPageProps) {
   const [selectedCategory, setSelectedCategory] = useState<string>('all');
   const [selectedDifficulty, setSelectedDifficulty] = useState<string>('all');
   const [selectedStatus, setSelectedStatus] = useState<string>('all');

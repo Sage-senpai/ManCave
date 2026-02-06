@@ -1,4 +1,4 @@
-import { Card } from './ui/card';
+import { Card } from '../ui/card';
 import { motion } from 'motion/react';
 import { LucideIcon } from 'lucide-react';
 import { TrendingUp, TrendingDown } from 'lucide-react';

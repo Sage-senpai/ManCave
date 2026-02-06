@@ -8,13 +8,21 @@ import { QuestBoardPage } from './components/pages/QuestBoardPage';
 import { ProfilePage } from './components/pages/ProfilePage';
 import { KnowledgeHubPage } from './components/pages/KnowledgeHubPage';
 import { ChatPage } from './components/pages/ChatPage';
+import { SettingsPage } from './components/pages/SettingsPage';
+import { WalletPage } from './components/pages/WalletPage';
 import { AdminOverviewPage } from './components/admin/pages/AdminOverviewPage';
 import { AdminQuestsPage } from './components/admin/pages/AdminQuestsPage';
 import { AdminSubmissionsPage } from './components/admin/pages/AdminSubmissionsPage';
 import { AdminUsersPage } from './components/admin/pages/AdminUsersPage';
+import { AdminContentPage } from './components/admin/pages/AdminContentPage';
+import { AdminEconomyPage } from './components/admin/pages/AdminEconomyPage';
+import { AdminAnalyticsPage } from './components/admin/pages/AdminAnalyticsPage';
+import { AdminAnnouncementsPage } from './components/admin/pages/AdminAnnouncementsPage';
+import { AdminModerationPage } from './components/admin/pages/AdminModerationPage';
+import { AdminSettingsPage } from './components/admin/pages/AdminSettingsPage';
 
-type Page = 'landing' | 'onboarding' | 'dashboard' | 'quests' | 'profile' | 'knowledge' | 'chat' |
-  'admin-overview' | 'admin-quests' | 'admin-submissions' | 'admin-users' | 'admin-content' | 
+type Page = 'landing' | 'onboarding' | 'dashboard' | 'quests' | 'profile' | 'knowledge' | 'chat' | 'settings' | 'wallet' |
+  'admin-overview' | 'admin-quests' | 'admin-submissions' | 'admin-users' | 'admin-content' |
   'admin-economy' | 'admin-analytics' | 'admin-announcements' | 'admin-moderation' | 'admin-settings';
 
 function AppContent() {
@@ -39,8 +47,7 @@ function AppContent() {
     }
   }, [isAdminMode, currentPage]);
 
-  const isAdminPage = currentPage.startsWith('admin-');
-  const showBackButton = ['quests', 'profile', 'knowledge', 'chat'].includes(currentPage);
+  const showBackButton = ['quests', 'profile', 'knowledge', 'chat', 'settings', 'wallet'].includes(currentPage);
   const showNavigation = currentPage !== 'onboarding';
 
   return (
@@ -84,6 +91,14 @@ function AppContent() {
         <ChatPage onNavigate={handleNavigate} />
       )}
 
+      {currentPage === 'settings' && (
+        <SettingsPage onNavigate={handleNavigate} />
+      )}
+
+      {currentPage === 'wallet' && (
+        <WalletPage onNavigate={handleNavigate} />
+      )}
+
       {/* Admin Pages */}
       {currentPage === 'admin-overview' && (
         <AdminOverviewPage onNavigate={handleNavigate} currentAdminPage={currentPage} />
@@ -101,23 +116,28 @@ function AppContent() {
         <AdminUsersPage onNavigate={handleNavigate} currentAdminPage={currentPage} />
       )}
 
-      {/* Placeholder for remaining admin pages */}
-      {['admin-content', 'admin-economy', 'admin-analytics', 
-        'admin-announcements', 'admin-moderation', 'admin-settings'].includes(currentPage) && (
-        <div className="min-h-screen pt-24 pb-12 px-4 flex items-center justify-center">
-          <div className="text-center">
-            <h1 className="text-4xl font-bold text-white mb-4">
-              {currentPage.split('-')[1].charAt(0).toUpperCase() + currentPage.split('-')[1].slice(1)} Page
-            </h1>
-            <p className="text-gray-400 mb-6">This admin section is under development</p>
-            <button
-              onClick={() => handleNavigate('admin-overview')}
-              className="text-[#0AF3FF] hover:text-[#0AF3FF]/80"
-            >
-              ← Back to Overview
-            </button>
-          </div>
-        </div>
+      {currentPage === 'admin-content' && (
+        <AdminContentPage onNavigate={handleNavigate} currentAdminPage={currentPage} />
+      )}
+
+      {currentPage === 'admin-economy' && (
+        <AdminEconomyPage onNavigate={handleNavigate} currentAdminPage={currentPage} />
+      )}
+
+      {currentPage === 'admin-analytics' && (
+        <AdminAnalyticsPage onNavigate={handleNavigate} currentAdminPage={currentPage} />
+      )}
+
+      {currentPage === 'admin-announcements' && (
+        <AdminAnnouncementsPage onNavigate={handleNavigate} currentAdminPage={currentPage} />
+      )}
+
+      {currentPage === 'admin-moderation' && (
+        <AdminModerationPage onNavigate={handleNavigate} currentAdminPage={currentPage} />
+      )}
+
+      {currentPage === 'admin-settings' && (
+        <AdminSettingsPage onNavigate={handleNavigate} currentAdminPage={currentPage} />
       )}
     </div>
   );

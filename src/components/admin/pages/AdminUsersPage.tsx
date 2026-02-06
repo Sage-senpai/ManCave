@@ -3,13 +3,12 @@ import { Card } from '../../ui/card';
 import { Button } from '../../ui/button';
 import { Input } from '../../ui/input';
 import { Badge } from '../../ui/badge';
-import { 
-  Search, 
-  UserPlus, 
+import {
+  Search,
+  UserPlus,
   MessageSquare,
   Trophy,
   Target,
-  Calendar,
   Mail,
   Shield
 } from 'lucide-react';
