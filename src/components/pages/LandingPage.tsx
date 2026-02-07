@@ -170,7 +170,7 @@ export function LandingPage({ onNavigate }: LandingPageProps) {
             >
               <div className="relative">
                 {/* Animated background glow */}
-                <div className="absolute inset-0 bg-gradient-to-r from-[#0AF3FF] to-[#0880FF] rounded-full blur-3xl opacity-30 animate-pulse" />
+                <div className="absolute inset-0 bg-gradient-to-r from-[#0AF3FF] to-[#0880FF] rounded-3xl blur-3xl opacity-20 animate-pulse" />
                 
                 {/* Mandala Chain Logo */}
                 <div className="relative w-96 h-96 rounded-full bg-gradient-to-br from-[#0AF3FF] via-[#0880FF] to-[#06B6D4] flex items-center justify-center shadow-2xl shadow-[#0AF3FF]/50 border-4 border-white/10">
