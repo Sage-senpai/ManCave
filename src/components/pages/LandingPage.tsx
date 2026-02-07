@@ -171,37 +171,14 @@ export function LandingPage({ onNavigate }: LandingPageProps) {
               <div className="relative">
                 {/* Animated background glow */}
                 <div className="absolute inset-0 bg-gradient-to-r from-[#0AF3FF] to-[#0880FF] rounded-3xl blur-3xl opacity-20 animate-pulse" />
-                
+
                 {/* Mandala Chain Logo */}
-                <div className="relative w-96 h-96 rounded-full bg-gradient-to-br from-[#0AF3FF] via-[#0880FF] to-[#06B6D4] flex items-center justify-center shadow-2xl shadow-[#0AF3FF]/50 border-4 border-white/10">
-                  {/* Mandala Pattern - Geometric circles */}
-                  <div className="absolute inset-0 rounded-full overflow-hidden">
-                    <svg viewBox="0 0 400 400" className="w-full h-full">
-                      {/* Outer ring */}
-                      <circle cx="200" cy="200" r="180" fill="none" stroke="rgba(255,255,255,0.1)" strokeWidth="2" />
-                      <circle cx="200" cy="200" r="160" fill="none" stroke="rgba(255,255,255,0.15)" strokeWidth="2" />
-                      <circle cx="200" cy="200" r="140" fill="none" stroke="rgba(255,255,255,0.1)" strokeWidth="2" />
-                      
-                      {/* Inner patterns */}
-                      {[0, 45, 90, 135, 180, 225, 270, 315].map((angle, i) => (
-                        <g key={i} transform={`rotate(${angle} 200 200)`}>
-                          <circle cx="200" cy="80" r="20" fill="rgba(255,255,255,0.2)" />
-                          <circle cx="200" cy="120" r="15" fill="rgba(255,255,255,0.15)" />
-                          <line x1="200" y1="100" x2="200" y2="200" stroke="rgba(255,255,255,0.1)" strokeWidth="1" />
-                        </g>
-                      ))}
-                      
-                      {/* Center circle */}
-                      <circle cx="200" cy="200" r="60" fill="rgba(0,0,0,0.3)" stroke="rgba(255,255,255,0.3)" strokeWidth="2" />
-                    </svg>
-                  </div>
-                  
-                  {/* Logo text */}
-                  <div className="relative z-10 text-center">
-                    <div className="text-8xl font-bold text-white mb-2">M</div>
-                    <div className="text-2xl font-semibold text-white tracking-wider">MANDALA</div>
-                    <div className="text-sm text-white/80 tracking-widest">CHAIN</div>
-                  </div>
+                <div className="relative w-96 h-96 flex items-center justify-center">
+                  <img
+                    src="/mandala_logo.svg"
+                    alt="Mandala Chain"
+                    className="w-72 h-72 drop-shadow-[0_0_40px_rgba(10,243,255,0.3)]"
+                  />
                 </div>
               </div>
             </motion.div>

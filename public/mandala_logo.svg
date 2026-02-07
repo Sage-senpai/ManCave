@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_3_copy" data-name="Layer 3 copy" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 435.52 365.48">
+  <defs>
+    <style>
+      .cls-1 {
+        font-size: 9.71px;
+        letter-spacing: .27em;
+      }
+
+      .cls-1, .cls-2, .cls-3 {
+        fill: #436ab3;
+      }
+
+      .cls-1, .cls-3 {
+        font-family: Poppins-SemiBold, Poppins;
+        font-weight: 600;
+      }
+
+      .cls-3 {
+        font-size: 24.04px;
+        letter-spacing: .4em;
+      }
+    </style>
+  </defs>
+  <g>
+    <path class="cls-2" d="M227.34,119.33v39.26h-39.26v-39.26h39.26M236.34,110.33h-57.26v57.26h57.26v-57.26h0Z"/>
+    <path class="cls-2" d="M207.71,73.22l14.08,24.39h-28.16l14.08-24.39M207.71,55.22l-29.67,51.39h59.34l-29.67-51.39h0Z"/>
+    <path class="cls-2" d="M221.79,180.43l-14.08,24.39-14.08-24.39h28.16M237.38,171.43h-59.34l29.67,51.39,29.67-51.39h0Z"/>
+    <path class="cls-2" d="M250.28,124.87l24.39,14.08-24.39,14.08v-28.16M241.28,109.29v59.34l51.39-29.67-51.39-29.67h0Z"/>
+    <path class="cls-2" d="M164.84,124.87v28.16l-24.39-14.08,24.39-14.08M173.84,109.29l-51.39,29.67,51.39,29.67v-59.34h0Z"/>
+  </g>
+  <text class="cls-3" transform="translate(119.12 249.15)"><tspan x="0" y="0">MANDALA</tspan></text>
+  <text class="cls-1" transform="translate(186.62 263.35)"><tspan x="0" y="0">CHAIN</tspan></text>
+</svg>
